@@ -1,0 +1,561 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Aufgabe 4 */
+
+.one {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 420px;
+    background-color: #fff;
+}
+
+.container img {
+    width: 400px;
+    height: 400px;
+}
+
+.container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 0;
+    animation-name: change-colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-colors {
+    0% {
+        box-shadow: 0px 10px 60px rgb(19, 238, 3),
+            10px 0px 60px rgb(14, 44, 240);
+    }
+
+    50% {
+        box-shadow: 10px 10px 60px rgb(244, 244, 244),
+            10px 10px 60px rgb(244, 244, 244);
+    }
+
+    100% {
+        box-shadow: 10px 0px 60px rgb(14, 44, 240),
+            0px 10px 60px rgb(19, 238, 3);
+    }
+}
+
+/* Aufgabe 5 */
+
+.two {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4 {
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 92%;
+    bottom: 92%;
+}
+.ball-1 {
+    z-index: 1;
+    background-color: rgb(0, 60, 255);
+    animation-name: moving-ball-1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.ball-2 {
+    background-color: rgb(26, 255, 0);
+    animation-name: moving-ball-2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.ball-3 {
+    background-color: rgb(256, 255, 0);
+    animation-name: moving-ball-3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.ball-4 {
+    background-color: rgb(246, 20, 20);
+    animation-name: moving-ball-4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes moving-ball-1 {
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+        right: 92%;
+        bottom: 92%;
+    }
+    25% {
+        top: 0;
+        left: 92%;
+        right: 0;
+        bottom: 92%;
+    }
+    50% {
+        top: 92%;
+        left: 92%;
+        right: 0;
+        bottom: 0;
+    }
+    75% {
+        top: 92%;
+        left: 0;
+        right: 92%;
+        bottom: 0;
+    }
+}
+@keyframes moving-ball-2 {
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+        right: 92%;
+        bottom: 92%;
+    }
+    25% {
+        top: 0;
+        left: 92%;
+        right: 0;
+        bottom: 92%;
+    }
+    50% {
+        top: 92%;
+        left: 92%;
+        right: 0;
+        bottom: 0;
+    }
+    75% {
+        top: 92%;
+        left: 0;
+        right: 92%;
+        bottom: 0;
+    }
+}
+@keyframes moving-ball-3 {
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+        right: 92%;
+        bottom: 92%;
+    }
+    25% {
+        top: 0;
+        left: 92%;
+        right: 0;
+        bottom: 92%;
+    }
+    50% {
+        top: 92%;
+        left: 92%;
+        right: 0;
+        bottom: 0;
+    }
+    75% {
+        top: 92%;
+        left: 0;
+        right: 92%;
+        bottom: 0;
+    }
+}
+@keyframes moving-ball-4 {
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+        right: 92%;
+        bottom: 92%;
+    }
+    25% {
+        top: 0;
+        left: 92%;
+        right: 0;
+        bottom: 92%;
+    }
+    50% {
+        top: 92%;
+        left: 92%;
+        right: 0;
+        bottom: 0;
+    }
+    75% {
+        top: 92%;
+        left: 0;
+        right: 92%;
+        bottom: 0;
+    }
+}
+
+/* Aufgabe 6 */
+
+.three {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.container3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    width: 500px;
+    height: 150px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #333;
+}
+.box-1 {
+    background-color: rgb(47, 255, 64);
+    left: 0;
+    top: 0;
+    animation-name: loading1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box-2 {
+    background-color: rgb(54, 22, 129);
+    left: 100px;
+    top: 0;
+    animation-name: loading2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.25s;
+}
+.box-3 {
+    background-color: rgb(227, 255, 47);
+    left: 200px;
+    top: 0;
+    animation-name: loading3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+}
+.box-4 {
+    background-color: rgb(250, 50, 32);
+    left: 300px;
+    top: 0;
+    animation-name: loading4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.75s;
+}
+.box-5 {
+    background-color: rgb(148, 46, 245);
+    left: 400px;
+    top: 0;
+    animation-name: loading5;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes loading1 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    10% {
+        left: 0;
+        top: 10px;
+    }
+    20% {
+        left: 0;
+        top: 20px;
+    }
+    30% {
+        left: 0;
+        top: 30px;
+    }
+
+    40% {
+        left: 0;
+        top: 40px;
+    }
+    50% {
+        left: 0;
+        top: 50px;
+    }
+    60% {
+        left: 0;
+        top: 60px;
+    }
+    70% {
+        left: 0;
+        top: 70px;
+    }
+
+    80% {
+        left: 0;
+        top: 80px;
+    }
+    90% {
+        left: 0;
+        top: 90px;
+    }
+    100% {
+        left: 0;
+        top: 100px;
+    }
+}
+
+@keyframes loading2 {
+    0% {
+        left: 100px;
+        top: 0;
+    }
+    10% {
+        left: 100px;
+        top: 10px;
+    }
+    20% {
+        left: 100px;
+        top: 20px;
+    }
+    30% {
+        left: 100px;
+        top: 30px;
+    }
+
+    40% {
+        left: 100px;
+        top: 40px;
+    }
+    50% {
+        left: 100px;
+        top: 50px;
+    }
+    60% {
+        left: 100px;
+        top: 60px;
+    }
+    70% {
+        left: 100px;
+        top: 70px;
+    }
+
+    80% {
+        left: 100px;
+        top: 80px;
+    }
+    90% {
+        left: 100px;
+        top: 90px;
+    }
+    100% {
+        left: 100px;
+        top: 100px;
+    }
+}
+
+@keyframes loading3 {
+    0% {
+        left: 200px;
+        top: 0;
+    }
+    10% {
+        left: 200px;
+        top: 10px;
+    }
+    20% {
+        left: 200px;
+        top: 20px;
+    }
+    30% {
+        left: 200px;
+        top: 30px;
+    }
+
+    40% {
+        left: 200px;
+        top: 40px;
+    }
+    50% {
+        left: 200px;
+        top: 50px;
+    }
+    60% {
+        left: 200px;
+        top: 60px;
+    }
+    70% {
+        left: 200px;
+        top: 70px;
+    }
+
+    80% {
+        left: 200px;
+        top: 80px;
+    }
+    90% {
+        left: 200px;
+        top: 90px;
+    }
+    100% {
+        left: 200px;
+        top: 100px;
+    }
+}
+
+@keyframes loading4 {
+    0% {
+        left: 300;
+        top: 0;
+    }
+    10% {
+        left: 300;
+        top: 10px;
+    }
+    20% {
+        left: 300;
+        top: 20px;
+    }
+    30% {
+        left: 300;
+        top: 30px;
+    }
+
+    40% {
+        left: 300;
+        top: 40px;
+    }
+    50% {
+        left: 300;
+        top: 50px;
+    }
+    60% {
+        left: 300;
+        top: 60px;
+    }
+    70% {
+        left: 300;
+        top: 70px;
+    }
+
+    80% {
+        left: 300;
+        top: 80px;
+    }
+    90% {
+        left: 300;
+        top: 90px;
+    }
+    100% {
+        left: 300;
+        top: 100px;
+    }
+}
+
+@keyframes loading5 {
+    0% {
+        left: 400px;
+        top: 0;
+    }
+    10% {
+        left: 400px;
+        top: 10px;
+    }
+    20% {
+        left: 400px;
+        top: 20px;
+    }
+    30% {
+        left: 400px;
+        top: 30px;
+    }
+
+    40% {
+        left: 400px;
+        top: 40px;
+    }
+    50% {
+        left: 400px;
+        top: 50px;
+    }
+    60% {
+        left: 400px;
+        top: 60px;
+    }
+    70% {
+        left: 400px;
+        top: 70px;
+    }
+
+    80% {
+        left: 400px;
+        top: 80px;
+    }
+    90% {
+        left: 400px;
+        top: 90px;
+    }
+    100% {
+        left: 400px;
+        top: 100px;
+    }
+}
+
+/* Aufgabe 7 */
+
+.seven {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+circle {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: dash 1s linear infinite alternate;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
