@@ -54,7 +54,7 @@
     }
 }
 
-/* Aufgabe 5 */
+/* Aufgabe5 */
 
 .two {
     width: 100%;
@@ -82,114 +82,33 @@
 .ball-1 {
     z-index: 1;
     background-color: rgb(0, 60, 255);
-    animation-name: moving-ball-1;
+    animation-name: moving-ball;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 .ball-2 {
     background-color: rgb(26, 255, 0);
-    animation-name: moving-ball-2;
+    animation-name: moving-ball;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
 }
 .ball-3 {
     background-color: rgb(256, 255, 0);
-    animation-name: moving-ball-3;
+    animation-name: moving-ball;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
 }
 .ball-4 {
     background-color: rgb(246, 20, 20);
-    animation-name: moving-ball-4;
+    animation-name: moving-ball;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
 }
 
-@keyframes moving-ball-1 {
-    0%,
-    100% {
-        top: 0;
-        left: 0;
-        right: 92%;
-        bottom: 92%;
-    }
-    25% {
-        top: 0;
-        left: 92%;
-        right: 0;
-        bottom: 92%;
-    }
-    50% {
-        top: 92%;
-        left: 92%;
-        right: 0;
-        bottom: 0;
-    }
-    75% {
-        top: 92%;
-        left: 0;
-        right: 92%;
-        bottom: 0;
-    }
-}
-@keyframes moving-ball-2 {
-    0%,
-    100% {
-        top: 0;
-        left: 0;
-        right: 92%;
-        bottom: 92%;
-    }
-    25% {
-        top: 0;
-        left: 92%;
-        right: 0;
-        bottom: 92%;
-    }
-    50% {
-        top: 92%;
-        left: 92%;
-        right: 0;
-        bottom: 0;
-    }
-    75% {
-        top: 92%;
-        left: 0;
-        right: 92%;
-        bottom: 0;
-    }
-}
-@keyframes moving-ball-3 {
-    0%,
-    100% {
-        top: 0;
-        left: 0;
-        right: 92%;
-        bottom: 92%;
-    }
-    25% {
-        top: 0;
-        left: 92%;
-        right: 0;
-        bottom: 92%;
-    }
-    50% {
-        top: 92%;
-        left: 92%;
-        right: 0;
-        bottom: 0;
-    }
-    75% {
-        top: 92%;
-        left: 0;
-        right: 92%;
-        bottom: 0;
-    }
-}
-@keyframes moving-ball-4 {
+@keyframes moving-ball {
     0%,
     100% {
         top: 0;
